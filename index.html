@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Jquery.simplepopup : Simple popup plugin based on Bootstrap Modal plugin. Links and form submissions within the popup will load within the popup itself.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery.simplepopup</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Ennexa/jQuery.simplepopup">View on GitHub</a>
+
+          <h1 id="project_title">Jquery.simplepopup</h1>
+          <h2 id="project_tagline">Simple popup plugin based on Bootstrap Modal plugin. Links and form submissions within the popup will load within the popup itself.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Ennexa/jQuery.simplepopup/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Ennexa/jQuery.simplepopup/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="jquerysimplepopup" class="anchor" href="#jquerysimplepopup" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery.simplepopup</h1>
+
+<p>Simple popup plugin based on Bootstrap Modal plugin. Links and form submissions within the popup will load within the popup itself.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-js"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>&lt;div&gt;This is a sample message. &lt;a href="message.html"&gt;Load Another Message&lt;/a&gt;.&lt;/div&gt;<span class="pl-pds">'</span></span>).simplepopup({title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Hello<span class="pl-pds">'</span></span>});</pre></div>
+
+<p>Add <code>data-skip</code> to links and forms within the modal content to prevent Ajax loading of the request.</p>
+
+<h3>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h3>
+
+<p><a href="http://ennexa.github.io/jQuery.simplepopup/demo/demo.html">View Demo</a></p>
+
+<h3>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h3>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td><code>&lt;empty&gt;</code></td>
+<td>Title for the modal window. If content loaded via Ajax has an <code>h1</code> element, it will be automatically loaded into the modal window title.</td>
+</tr>
+<tr>
+<td>show</td>
+<td><code>true</code></td>
+<td>Open the window upon initialization.</td>
+</tr>
+<tr>
+<td>backdrop</td>
+<td><code>true</code></td>
+<td>Show the translucent backdrop.</td>
+</tr>
+<tr>
+<td>keyboard</td>
+<td><code>true</code></td>
+<td>Allow closing the modal window with escape key.</td>
+</tr>
+<tr>
+<td>footerAction</td>
+<td><code>true</code></td>
+<td>If set to true, the submit and reset buttons within <code>.footer-action</code> element will be moved to Modal window's footer.</td>
+</tr>
+<tr>
+<td>extraClass</td>
+<td><code>fade</code></td>
+<td>Additional class to be added to modal window.</td>
+</tr>
+<tr>
+<td>width</td>
+<td><code>null</code></td>
+<td>Width for the modal window. It can be a number or one of the constants <code>modal-lg</code>, <code>modal-sm</code> or <code>modal-xs</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>This plugin was created for <a href="http://www.prokerala.com">Prokerala.com</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery.simplepopup maintained by <a href="https://github.com/Ennexa">Ennexa</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
