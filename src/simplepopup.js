@@ -7,7 +7,7 @@
  * @version 1.0.0
  *
  */
-
+/*! http://git.io/simplepopup | © Ennexa Technologies | http://www.ennexa.com/ */
 (function ($) {
 	var SimplePopup = function (elem, options) {
 		var target, popup = this;
