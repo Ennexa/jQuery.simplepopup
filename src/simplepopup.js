@@ -55,7 +55,7 @@
 			}
 		}).on('submit', 'form:not([data-skip])', function (e) {
 			var frm = e.target;
-			$.post(frm.action, $(frm).serialize(), popup.__setContent);
+			$.ajax(frm.getAttribute("action"), {data: $(frm).serialize(), success: popup.__setContent, method: frm.getAttribute("method") || 'GET'});
 			e.preventDefault();
 		});
 		
