@@ -7,7 +7,7 @@
  * @version 1.0.0
  *
  */
-
+/*! http://git.io/simplepopup | © Ennexa Technologies | http://www.ennexa.com/ */
 (function ($) {
 	var SimplePopup = function (elem, options) {
 		var target, popup = this;
@@ -55,7 +55,7 @@
 			}
 		}).on('submit', 'form:not([data-skip])', function (e) {
 			var frm = e.target;
-			$.ajax(frm.action, {data: $(frm).serialize(), success: popup.__setContent, method: frm.method || 'GET'});
+			$.ajax(frm.getAttribute("action"), {data: $(frm).serialize(), success: popup.__setContent, method: frm.getAttribute("method") || 'GET'});
 			e.preventDefault();
 		});
 		
