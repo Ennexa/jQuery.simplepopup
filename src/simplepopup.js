@@ -37,7 +37,7 @@
 				var frm = actions.closest('form');
 				this.__footer.empty();
 				actions.removeClass('form-actions').find('[type="submit"],[type="reset"]').click(function(){
-					if (frm.length) frm[this.type]();
+					if (frm.length) frm.trigger(this.type);
 				}).appendTo(this.__footer);
 			}
 			h1.remove();
